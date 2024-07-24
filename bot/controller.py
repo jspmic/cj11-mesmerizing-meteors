@@ -29,4 +29,5 @@ class Controller:
         raise ValueError
 
     def play_level(self, use_level: int) -> None:
-        [level.run(use_level) for level in self.levels.values()]
+
+        [level.run(use_level) for level in self.levels.values()] # use_level: Level the player is going to play
