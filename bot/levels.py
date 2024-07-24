@@ -44,14 +44,14 @@ class Level(Protocol):
 
 class Level1(Level):
     def __init__(self):
-        self.id = '1'
-        self.name = 1
+        self.id = 1
+        self.name = '1'
         self.description = ''
         self.map_position = ''
 
     def run(self, level: int) -> None:
-        if level == self.name:
-            print(f"Level {self.name} reacts")
+        if level == self.id:
+            print(f"Level {self.name} is played")
 
 
 class EvaluateCodeLevel(Level):
